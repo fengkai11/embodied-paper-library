@@ -29,5 +29,14 @@ for (const name of files) {
 for (const page of ['docs/index.md','docs/library.md','docs/routes.md','docs/review.md','docs/topics/index.md','docs/experiments/index.md','docs/templates/paper.md']) {
   if (!existsSync(page)) errors.push(`Missing page: ${page}`)
 }
+const imageSources = JSON.parse(readFileSync('design/image-sources.json', 'utf8'))
+const imageSlugs = new Set()
+for (const image of imageSources) {
+  if (!slugs.has(image.slug) || imageSlugs.has(image.slug)) errors.push(`Invalid or duplicate image slug: ${image.slug}`)
+  imageSlugs.add(image.slug)
+  if (!/^\/papers\/[a-z0-9-]+\.webp$/.test(image.image) || !existsSync(join('docs/public', image.image))) errors.push(`Missing or invalid image asset: ${image.image}`)
+  for (const key of ['alt', 'caption', 'kind', 'credit']) if (!image[key]?.trim()) errors.push(`${image.slug}: missing image ${key}`)
+  for (const key of ['sourcePage', 'originalImageUrl']) if (!/^https:\/\//.test(image[key])) errors.push(`${image.slug}: missing HTTPS ${key}`)
+}
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1 }
-else console.log(`Validated ${files.length} paper notes: required metadata, sources, related links and page entry points.`)
+else console.log(`Validated ${files.length} paper notes and ${imageSources.length} image sources: metadata, assets, sources, related links and page entry points.`)
