@@ -1,0 +1,9 @@
+node_modules/
+dist/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.sites-runtime/
+.DS_Store
+*.log
+
+.openai/
