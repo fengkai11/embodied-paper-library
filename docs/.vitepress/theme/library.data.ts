@@ -1,4 +1,13 @@
 import { createContentLoader } from 'vitepress'
+import imageSources from '../../../design/image-sources.json'
+
+export interface PaperVisual {
+  image: string
+  alt: string
+  caption: string
+  sourcePage: string
+  kind: string
+}
 
 export interface Entry {
   url: string
@@ -17,6 +26,7 @@ export interface Entry {
   takeaway: string
   noteType: string
   text: string
+  visual?: PaperVisual
 }
 
 declare const data: Entry[]
@@ -41,6 +51,7 @@ export default createContentLoader(['papers/*.md', 'topics/*.md', 'experiments/*
       related: f.related || [],
       takeaway: f.takeaway || '',
       noteType: f.noteType || 'guide',
+      visual: imageSources.find(image => image.slug === url.split('/').pop()!.replace(/\.html$/, '')),
       text: (html || '').replace(/<[^>]*>/g, ' ').replace(/&[^;]+;/g, ' ').replace(/\s+/g, ' ').trim(),
     })).sort((a, b) => b.year - a.year || a.shortTitle.localeCompare(b.shortTitle))
   },

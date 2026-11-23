@@ -1,4 +1,4 @@
 ---
-title: 技术路线
+title: 图像时间线
 view: routes
 ---

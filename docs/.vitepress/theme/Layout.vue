@@ -19,7 +19,7 @@ const papers = entries.filter(e => e.noteType === 'paper')
 const links = [
   { label: '研究首页', icon: 'grid', path: '/', view: 'home' },
   { label: '论文库', icon: 'book', path: '/library.html', view: 'library' },
-  { label: '技术路线', icon: 'map', path: '/routes.html', view: 'routes' },
+  { label: '图像时间线', icon: 'map', path: '/routes.html', view: 'routes' },
   { label: '专题比较', icon: 'layers', path: '/topics/', view: 'topics' },
   { label: '实验记录', icon: 'flask', path: '/experiments/', view: 'experiments' },
   { label: '复习中心', icon: 'repeat', path: '/review.html', view: 'review' },
@@ -81,7 +81,7 @@ watch(menuOpen, async (open) => {
   <div class="workspace">
     <header class="topbar">
       <div class="breadcrumb"><button class="icon-button mobile-menu" @click="menuOpen = !menuOpen" :aria-expanded="menuOpen" aria-label="打开导航"><Icon name="menu" /></button><span class="breadcrumb-root">知识库</span><span class="breadcrumb-divider">/</span><span>{{ frontmatter.shortTitle || page.title || '页面' }}</span></div>
-      <div class="topbar-actions"><button class="search-trigger" aria-label="搜索论文与笔记" @click="search?.open()"><Icon name="search" :size="17" /><span>搜索论文、概念与笔记</span><kbd>⌘ K</kbd></button><span class="version-tag">V0.1</span></div>
+      <div class="topbar-actions"><button class="search-trigger" aria-label="搜索论文与笔记" @click="search?.open()"><Icon name="search" :size="17" /><span>搜索论文、概念与笔记</span><kbd>⌘ K</kbd></button><span class="version-tag">V0.2</span></div>
     </header>
     <main id="main-content" class="main-content" tabindex="-1">
       <div v-if="page.isNotFound" class="empty-page"><Icon name="search" :size="40" /><h1>这页笔记还没有收录</h1><p>可以回到论文库，或按关键词搜索已有内容。</p><a class="button primary" :href="withBase('/library.html')">浏览论文库</a></div>

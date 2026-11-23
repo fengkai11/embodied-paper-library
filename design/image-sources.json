@@ -1,0 +1,153 @@
+[
+  {
+    "slug": "hil-serl",
+    "sourcePage": "https://hil-serl.github.io/",
+    "originalImageUrl": "https://hil-serl.github.io/static/videos/teasers/motherboard.mp4",
+    "alt": "HIL-SERL 作者演示中，机器人夹爪位于主板装配工作台上方。",
+    "caption": "作者任务演示：主板装配，截取官方视频第 1 秒画面。",
+    "kind": "作者任务演示",
+    "credit": "HIL-SERL 作者项目网站",
+    "videoTimestampSeconds": 1,
+    "image": "/papers/hil-serl.webp",
+    "originalDimensions": [
+      1920,
+      1080
+    ],
+    "dimensions": [
+      1400,
+      788
+    ],
+    "bytes": 178708,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。视频仅提取一个静态帧。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "industreal",
+    "sourcePage": "https://arxiv.org/abs/2305.17110",
+    "originalImageUrl": "https://arxiv.org/pdf/2305.17110",
+    "alt": "IndustReal 论文总览图：上方为齿轮装配仿真，中间为四个方法模块，下方为真实机器人装配。",
+    "caption": "作者论文图 1：齿轮装配任务从仿真训练迁移到真实机器人。",
+    "kind": "作者论文图",
+    "credit": "Tang 等，IndustReal，Figure 1",
+    "sourceFigure": "Figure 1, page 1",
+    "extraction": "提取 PDF 原始嵌入图像并恢复其透明蒙版，以白底显示；未裁剪图中内容。",
+    "image": "/papers/industreal.webp",
+    "originalDimensions": [
+      652,
+      472
+    ],
+    "dimensions": [
+      652,
+      472
+    ],
+    "bytes": 50866,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "td-mpc2",
+    "sourcePage": "https://www.tdmpc2.com/",
+    "originalImageUrl": "https://www.tdmpc2.com/videos/tdmpc2-assembly.mp4",
+    "alt": "TD-MPC2 作者仿真演示中，红色机械臂在木质工作台上执行装配任务。",
+    "caption": "作者仿真演示：装配任务，截取官方视频第 1 秒画面。",
+    "kind": "作者仿真演示",
+    "credit": "TD-MPC2 作者项目网站",
+    "videoTimestampSeconds": 1,
+    "image": "/papers/td-mpc2.webp",
+    "originalDimensions": [
+      256,
+      256
+    ],
+    "dimensions": [
+      256,
+      256
+    ],
+    "bytes": 9872,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。视频仅提取一个静态帧。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "dino-wm",
+    "sourcePage": "https://dino-wm.github.io/",
+    "originalImageUrl": "https://dino-wm.github.io/mfiles/figs/model_arch.png",
+    "alt": "DINO-WM 方法图：DINOv2 图像特征、动作条件转移模型与规划目标。",
+    "caption": "作者方法图：在 DINOv2 特征空间学习动作条件动力学，并据此规划。",
+    "kind": "作者方法图",
+    "credit": "DINO-WM 作者项目网站",
+    "image": "/papers/dino-wm.webp",
+    "originalDimensions": [
+      3506,
+      1097
+    ],
+    "dimensions": [
+      1600,
+      501
+    ],
+    "bytes": 45378,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "pi0",
+    "sourcePage": "https://www.pi.website/blog/pi0",
+    "originalImageUrl": "https://www.pi.website/images/p0-hero-video-poster.jpg",
+    "alt": "π₀ 官方洗衣任务视频封面：从洗衣机内看机器人搬运衣物。",
+    "caption": "官方任务视频封面：π₀ 洗衣演示。",
+    "kind": "官方任务图",
+    "credit": "Physical Intelligence，π₀ 官方发布文章",
+    "image": "/papers/pi0.webp",
+    "originalDimensions": [
+      1080,
+      608
+    ],
+    "dimensions": [
+      1080,
+      608
+    ],
+    "bytes": 63140,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "pi05",
+    "sourcePage": "https://www.pi.website/blog/pi05",
+    "originalImageUrl": "https://www.pi.website/images/pi05/verbal_instruction.jpg",
+    "alt": "π₀.₅ 官方文章中的口头指令示例：人在厨房向移动机器人下达指令。",
+    "caption": "官方数据示例：人在厨房向机器人给出口头指令。",
+    "kind": "官方数据示例",
+    "credit": "Physical Intelligence，π₀.₅ 官方发布文章",
+    "image": "/papers/pi05.webp",
+    "originalDimensions": [
+      400,
+      300
+    ],
+    "dimensions": [
+      400,
+      300
+    ],
+    "bytes": 36928,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  },
+  {
+    "slug": "pistar06",
+    "sourcePage": "https://www.pi.website/blog/pistar06",
+    "originalImageUrl": "https://physicalintelligence.company/images/pistar06-og.png",
+    "alt": "π*₀.₆ 官方配图：机器人在咖啡台操作奶缸，叠加论文发布标题。",
+    "caption": "官方发布配图：咖啡制作场景与 π*₀.₆ 标题。",
+    "kind": "官方任务图",
+    "credit": "Physical Intelligence，π*₀.₆ 官方发布文章",
+    "image": "/papers/pistar06.webp",
+    "originalDimensions": [
+      2400,
+      1260
+    ],
+    "dimensions": [
+      1400,
+      735
+    ],
+    "bytes": 95322,
+    "processing": "保持原图比例，WebP 压缩；未裁剪、未增删图中信息。",
+    "usage": "作者资料的学习索引配图；不代表本站实验结果。"
+  }
+]
